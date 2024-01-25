@@ -111,6 +111,8 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/parlange/anaconda3/envs/tf213/lib/python3.10/site-packages/tensorrt
 ```
 
+Remove NUMA warnings: https://github.com/tensorflow/tensorflow/issues/42738
+
 Install jupyter via Anaconda
 
 ```
