@@ -93,5 +93,15 @@ cp $CONDA_PREFIX/lib/libdevice.10.bc $CONDA_PREFIX/lib/nvvm/libdevice/
 ```
 
 
+## $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+### Each conda env has its own activate script. At the end it must have these paths:
+
+```
+export LD_LIBRARY_PATH=/home/parlange/anaconda3/envs/tf213/lib/
+CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))
+export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH
+export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/parlange/anaconda3/envs/tf213/lib/python3.10/site-packages/tensorrt
+```
 
 
