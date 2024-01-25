@@ -101,7 +101,7 @@ cp $CONDA_PREFIX/lib/libdevice.10.bc $CONDA_PREFIX/lib/nvvm/libdevice/
 nano $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ```
 
-Copy the following paths for this conda env:
+Paths copied to env_vars.sh for this conda env:
 
 ```
 export LD_LIBRARY_PATH=/home/parlange/anaconda3/envs/tf213/lib/
