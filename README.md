@@ -96,7 +96,7 @@ cp $CONDA_PREFIX/lib/libdevice.10.bc $CONDA_PREFIX/lib/nvvm/libdevice/
 
 
 #### $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-#### Each conda env has its own activate script. At the end it must have these paths:
+#### Each conda env has its own activate script. These are the paths included in the env_vars.sh file:
 
 ```
 export LD_LIBRARY_PATH=/home/parlange/anaconda3/envs/tf213/lib/
