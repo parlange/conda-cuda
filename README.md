@@ -1,7 +1,7 @@
 # conda-cuda
 Guide to install cuda and cudnn with Anaconda on Ubuntu 22.04
 
-Versions:
+## Versions:
 
 + cuda 11.8
 + cudnn 8.8
@@ -9,6 +9,8 @@ Versions:
 + tensorflow 2.13
 + python 3.10
 + tensorrt 8.5.3.1
+
+## Installation:
 
 [tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts](https://medium.com/@dev-charodeyka/tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts-ad61c1d9ee32)
 
@@ -69,7 +71,7 @@ echo 'export LD_LIBRARY_PATH=$CONDA_PREFIX/lib/:$CUDNN_PATH/lib:$LD_LIBRARY_PATH
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 ```
 
-## In Ubuntu 22.04 you may get this error
+### In Ubuntu 22.04 you may get this error
 > Can't find libdevice directory ${CUDA_DIR}/nvvm/libdevice.
 ...
 Couldn't invoke ptxas --version
@@ -93,8 +95,8 @@ cp $CONDA_PREFIX/lib/libdevice.10.bc $CONDA_PREFIX/lib/nvvm/libdevice/
 ```
 
 
-## $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
-### Each conda env has its own activate script. At the end it must have these paths:
+#### $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
+#### Each conda env has its own activate script. At the end it must have these paths:
 
 ```
 export LD_LIBRARY_PATH=/home/parlange/anaconda3/envs/tf213/lib/
