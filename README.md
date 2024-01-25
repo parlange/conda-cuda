@@ -95,7 +95,7 @@ cp $CONDA_PREFIX/lib/libdevice.10.bc $CONDA_PREFIX/lib/nvvm/libdevice/
 ```
 
 
-### Each conda env has its own script. These paths must be included to use cuda, cudnn and tensorrt. Edit env_vars.sh file:
+### Paths for conda env with cuda, cudnn and tensorrt. Edit env_vars.sh file:
 
 ```
 nano $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
