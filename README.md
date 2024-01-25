@@ -7,6 +7,7 @@ Versions:
 + cudnn 8.8
 + cudatoolkit 11.8
 + tensorflow 2.13
++ python 3.10
 + tensorrt 8.5.3.1
 
 [tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts](https://medium.com/@dev-charodeyka/tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts-ad61c1d9ee32)
