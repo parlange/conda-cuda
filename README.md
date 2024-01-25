@@ -111,11 +111,17 @@ export XLA_FLAGS=--xla_gpu_cuda_data_dir=$CONDA_PREFIX/lib/
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/parlange/anaconda3/envs/tf213/lib/python3.10/site-packages/tensorrt
 ```
 
-Remove NUMA warnings (https://github.com/tensorflow/tensorflow/issues/42738):
-
+### NUMA warnings 
+https://github.com/tensorflow/tensorflow/issues/42738
 ```
 for a in /sys/bus/pci/devices/*; do echo 0 | sudo tee -a $a/numa_node; done
 ```
+https://zrruziev.medium.com/fixing-the-successful-numa-node-read-from-sysfs-had-negative-value-1-but-there-must-be-at-7d798d5b912d
+
+```
+sudo echo 0 | sudo tee -a /sys/bus/pci/devices/0000\:01\:00.0/numa_node
+```
+
 
 Install jupyter via Anaconda
 
