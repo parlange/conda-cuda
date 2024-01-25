@@ -101,6 +101,8 @@ cp $CONDA_PREFIX/lib/libdevice.10.bc $CONDA_PREFIX/lib/nvvm/libdevice/
 nano $CONDA_PREFIX/etc/conda/activate.d/env_vars.sh
 ```
 
+Copy the following paths for this conda env:
+
 ```
 export LD_LIBRARY_PATH=/home/parlange/anaconda3/envs/tf213/lib/
 CUDNN_PATH=$(dirname $(python -c "import nvidia.cudnn;print(nvidia.cudnn.__file__)"))
