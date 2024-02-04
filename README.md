@@ -1,7 +1,7 @@
 # conda-cuda
 Guide to install cuda and cudnn with Anaconda on Ubuntu 22.04
 
-## Versions:
+## Versions
 
 + cuda 11.8
 + cudnn 8.8
@@ -10,7 +10,7 @@ Guide to install cuda and cudnn with Anaconda on Ubuntu 22.04
 + python 3.10
 + tensorrt 8.5.3.1
 
-## Installation:
+## Installation
 
 [tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts](https://medium.com/@dev-charodeyka/tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts-ad61c1d9ee32)
 
