@@ -12,7 +12,19 @@ Guide to install cuda and cudnn with Anaconda on Ubuntu 22.04
 
 ## Installation
 
+nvidia-driver
+
+```
+lspci | grep -e VGA
+
+ubuntu-drivers devices
+
+sudo apt install nvidia-driver-535
+
+```
+
 [tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts](https://medium.com/@dev-charodeyka/tensorflow-conda-nvidia-gpu-on-ubuntu-22-04-3-lts-ad61c1d9ee32)
+
 
 
 ```
