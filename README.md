@@ -138,7 +138,7 @@ sudo echo 0 | sudo tee -a /sys/bus/pci/devices/0000\:01\:00.0/numa_node
 Install jupyter via Anaconda
 
 ```
-conda install jupyter
+pip install jupyter
 ```
 
 [Local runtime in Colab](https://research.google.com/colaboratory/local-runtimes.html)
