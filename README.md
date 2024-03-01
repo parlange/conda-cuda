@@ -188,7 +188,7 @@ tensorboard               2.15.2                   pypi_0    pypi
 tensorboard-data-server   0.7.2                    pypi_0    pypi
 tensorflow                2.15.0.post1             pypi_0    pypi
 tensorflow-estimator      2.15.0                   pypi_0    pypi
-tensorflow-io-gcs-filesystem 0.36.0                   pypi_0    pypi
+tensorflow-io-gcs-fs      0.36.0                   pypi_0    pypi
 tensorflow-probability    0.23.0                   pypi_0    pypi
 termcolor                 2.4.0                    pypi_0    pypi
 ```
