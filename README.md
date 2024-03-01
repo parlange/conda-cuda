@@ -152,3 +152,42 @@ pip install jupyter
 
 Copy the kernel URL to Local Runtime in Colab to use your GPU with their front end.
 
+
+For Tensorflow 2.15 for tensorflow-probability
+
+```
+conda create -n tf215 python=3.10
+
+conda activate tf215
+
+pip install tensorflow[and-cuda]
+
+conda install -c anaconda ipykernel
+
+python -m ipykernel install --user --name=tf215
+
+```
+The auto installer loaded cuDNN version 8904, tensorflow 2.15
+
+```
+nvidia-cublas-cu12        12.2.5.6                 pypi_0    pypi
+nvidia-cuda-cupti-cu12    12.2.142                 pypi_0    pypi
+nvidia-cuda-nvcc-cu12     12.2.140                 pypi_0    pypi
+nvidia-cuda-nvrtc-cu12    12.2.140                 pypi_0    pypi
+nvidia-cuda-runtime-cu12  12.2.140                 pypi_0    pypi
+nvidia-cudnn-cu12         8.9.4.25                 pypi_0    pypi
+nvidia-cufft-cu12         11.0.8.103               pypi_0    pypi
+nvidia-curand-cu12        10.3.3.141               pypi_0    pypi
+nvidia-cusolver-cu12      11.5.2.141               pypi_0    pypi
+nvidia-cusparse-cu12      12.1.2.141               pypi_0    pypi
+nvidia-nccl-cu12          2.16.5                   pypi_0    pypi
+nvidia-nvjitlink-cu12     12.2.140                 pypi_0    pypi
+tensorboard               2.15.2                   pypi_0    pypi
+tensorboard-data-server   0.7.2                    pypi_0    pypi
+tensorflow                2.15.0.post1             pypi_0    pypi
+tensorflow-estimator      2.15.0                   pypi_0    pypi
+tensorflow-io-gcs-filesystem 0.36.0                   pypi_0    pypi
+tensorflow-probability    0.23.0                   pypi_0    pypi
+termcolor                 2.4.0                    pypi_0    pypi
+```
+
