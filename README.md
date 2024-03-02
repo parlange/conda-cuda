@@ -153,7 +153,10 @@ pip install jupyter
 Copy the kernel URL to Local Runtime in Colab to use your GPU with their front end.
 
 
-For Tensorflow 2.15 for tensorflow-probability
+
+## tensorflow-probability with tf autoinstaller
+
+For tensorflow-probability use Tensorflow 2.15
 
 ```
 conda create -n tf215 python=3.10
