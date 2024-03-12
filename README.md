@@ -50,7 +50,7 @@ conda activate tf213
 
 echo $LD_LIBRARY_PATH
 
-python -m pip install tensorrt==8.5.3.1
+pip install tensorrt==8.5.3.1
 
 TENSORRT_PATH=$(dirname $(python -c "import tensorrt;print(tensorrt.__file__)"))
 echo $TENSORRT_PATH
@@ -66,7 +66,7 @@ conda activate tf213
 
 echo $LD_LIBRARY_PATH
 
-python -m pip install tensorflow==2.13
+pip install tensorflow==2.13
 
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 
