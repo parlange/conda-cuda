@@ -165,6 +165,8 @@ conda activate tf215
 
 pip install tensorflow[and-cuda]
 
+pip3 install tensorflow==2.15
+
 conda install jupyter
 
 conda install -c anaconda ipykernel
