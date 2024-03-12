@@ -66,7 +66,7 @@ conda activate tf213
 
 echo $LD_LIBRARY_PATH
 
-pip install tensorflow==2.13
+pip3 install tensorflow==2.13
 
 python3 -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
 
