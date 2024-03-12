@@ -50,7 +50,7 @@ conda activate tf213
 
 echo $LD_LIBRARY_PATH
 
-pip install tensorrt==8.5.3.1
+pip3 install tensorrt==8.5.3.1
 
 TENSORRT_PATH=$(dirname $(python -c "import tensorrt;print(tensorrt.__file__)"))
 echo $TENSORRT_PATH
