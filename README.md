@@ -174,7 +174,7 @@ conda install -c anaconda ipykernel
 python -m ipykernel install --user --name=tf215
 
 ```
-The auto installer loaded cuDNN version 8904, tensorflow 2.15
+The auto installer loaded cuDNN version 8906, tensorflow 2.15
 
 ```
 nvidia-cublas-cu12        12.2.5.6                 pypi_0    pypi
