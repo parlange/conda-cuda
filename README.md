@@ -50,7 +50,7 @@ conda activate tf213
 
 echo $LD_LIBRARY_PATH
 
-pip3 install tensorrt==8.5.3.1
+pip install tensorrt==8.5.3.1
 
 TENSORRT_PATH=$(dirname $(python -c "import tensorrt;print(tensorrt.__file__)"))
 echo $TENSORRT_PATH
@@ -165,7 +165,7 @@ conda activate tf215
 
 pip install tensorflow[and-cuda]
 
-pip3 install tensorflow==2.15
+pip install tensorflow==2.15
 
 conda install jupyter
 
