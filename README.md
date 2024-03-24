@@ -12,7 +12,7 @@ Guide to install cuda and cudnn with Anaconda on Ubuntu 22.04
 
 ## Installation
 
-nvidia-driver
+detect GPU and install nvidia-driver
 
 ```
 lspci | grep -e VGA
