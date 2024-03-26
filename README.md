@@ -201,6 +201,7 @@ termcolor                 2.4.0                    pypi_0    pypi
 ## tensorflow-probability with JAX
 
 ```
+conda create -n jax python=3.11
 pip install --upgrade pip
 pip install --upgrade "jax[cuda12_pip]" -f https://storage.googleapis.com/jax-releases/jax_cuda_releases.html
 ```
